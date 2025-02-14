@@ -61,7 +61,9 @@ const yesImages = [
     "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWNwZnhvc2QyMmtlOTNjN2Q5eDA0NzBpd2N2dzAyb2p6dW9vNWZzcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/sRLfDd1R33y1OHGMUB/giphy.gif",
     "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDlzdzNobzFhc2sxZ2RlcXIxdzZoZmhuYTVidGhnNmFza2cwMHM1MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/DVwUa7CmyEqAERURvo/giphy.gif",
     "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2xhanoxcXFndTVxYWs1b2JqYjJqaDM2eW1vczRsZXo4aTJmeWJzeCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/5Yfcn9JO3ZMN6YtXPJ/giphy.gif",
-    "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDhzYWt0YmQ2eGkyYWVzZXZ3Mzl5MTR6ZmxqOGVrajBhdWVqY3YxeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/YVhpNLN6aBCpczlLGs/giphy.gif"
+    "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDhzYWt0YmQ2eGkyYWVzZXZ3Mzl5MTR6ZmxqOGVrajBhdWVqY3YxeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/YVhpNLN6aBCpczlLGs/giphy.gif",
+    "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2o2dm5qMGltbHI5aHlvOGVvNGl3YzliczY1b3ZxMmdmdDFnbHRmayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/wNk71OcVtOPncxNHVT/giphy.gif",
+    "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2w0d2Z2aWtqZ3FkeGpwNnhwNDNoZTM1bnR0dmhzeDJsMmpkcWhkciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/9XY4f3FgFTT4QlaYqa/giphy.gif"
 ];
 
 function handleYesClick() {
@@ -69,13 +71,13 @@ function handleYesClick() {
     const questionGif = document.querySelector('.question_gif');
     questionGif.style.display = 'none';
 
-    // Hide the No button
-    const noButton = document.querySelector('.no-button');
-    noButton.style.display = 'none';
+    // Hide the buttons
+    const buttons = document.querySelector('.buttons');
+    buttons.style.display = 'none';
 
-    // Reset Yes button size
-    const yesButton = document.querySelector('.yes-button');
-    yesButton.style.fontSize = '1.5em'; // This is the original size from CSS
+    // Change the h1 text
+    const heading = document.querySelector('h1');
+    heading.textContent = 'I knew you would say yes for me!';
 
     // Show random yes gif
     const yesGif = document.querySelector('.yes_gif');
